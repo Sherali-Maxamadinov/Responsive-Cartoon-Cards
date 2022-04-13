@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  padding: 0.3rem 0.6rem;
+  border-radius: 15px;
+  border: none;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./Components/Assets/Images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .card {
+  max-width: 350px;
+  margin: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.wrapper .card:hover {
+  transform: scale(1.1);
+}
+.wrapper .card .image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+.wrapper .card .content {
+  background-color: rgb(53, 53, 53);
+  color: #fff;
+}
+.wrapper .card .content .categories {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.wrapper .card .content h1 {
+  margin-top: 1rem;
+}
+.wrapper .card .content .text {
+  width: 80%;
+  margin: 1rem auto;
+}
+.wrapper .card .content .feedback {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.wrapper .card .content .feedback button {
+  background-color: rgb(220, 8, 220);
+  color: #fff;
+}
+.wrapper .card .one {
+  background-image: url("./Components/Assets/Images/1.jpg");
+}
+.wrapper .card .two {
+  background-image: url("./Components/Assets/Images/2.jpg");
+}
+.wrapper .card .three {
+  background-image: url("./Components/Assets/Images/3.jpg");
+}
+.wrapper .card .content .first {
+  color: rgb(22, 156, 214);
+}
+.wrapper .card .content .first button {
+  background-color: rgb(22, 156, 214);
+}
+.wrapper .card .content .second {
+  color: rgb(22, 214, 118);
+}
+.wrapper .card .content .second button {
+  background-color: rgb(22, 214, 118);
+}
+.wrapper .card .content .third {
+  color: rgb(214, 160, 22);
+}
+.wrapper .card .content .third button {
+  background-color: rgb(214, 160, 22);
+}
+
+@media (min-width: 0) and (max-width: 750px) {
+  .wrapper {
+    height: auto;
+  }
+  .card {
+    margin: 1rem 0;
+    width: 300px;
+  }
+}
